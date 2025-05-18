@@ -42,7 +42,7 @@ let contextoNiwan = "";
 const initialInputHeight = messageInput.scrollHeight;
 
 // Carrega o contexto de Niwan a partir do arquivo local
-fetch("/public/context-niwan.txt")
+fetch("https://raw.githubusercontent.com/niwspider/teste-neobot/main/public/context-niwan.txt")
   .then(res => res.text())
   .then(text => {
     contextoNiwan = text.trim();
